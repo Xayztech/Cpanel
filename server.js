@@ -160,7 +160,6 @@ app.post('/create-bot', verifyToken, async (req, res) => {
 });
 
 // Menjalankan server backend
-const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`🚀 Server backend berjalan di http://localhost:${PORT}`);
 });
