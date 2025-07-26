@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Hosting Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-sky"></div>
+
+    <div class="container">
+
+        <div id="login-view">
+            <h1>🔑 Akses Hosting</h1>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Masukkan Username Anda" required>
+                <input type="password" id="license-key" placeholder="Masukkan Key License Anda" required>
+                <button type="submit">Masuk</button>
+            </form>
+        </div>
+
+        <div id="user-view" class="hidden">
+            <h1>🤖 Buat Hosting BOT WhatsApp</h1>
+            <form id="create-bot-form">
+                <input type="text" id="bot-username" placeholder="Username untuk Bot Anda" required>
+                <input type="password" id="bot-password" placeholder="Password Panel Bot" required>
+                
+                <input type="number" id="bot-cpu" placeholder="CPU (%) - 0 untuk unlimited" required min="0">
+                <input type="number" id="bot-ram" placeholder="RAM (MB) - 0 untuk unlimited" required min="0">
+                <input type="number" id="bot-disk" placeholder="Disk (MB) - 0 untuk unlimited" required min="0">
+                
+                <button type="submit">Buat Hosting Bot</button>
+            </form>
+            <button id="logout-user" class="logout-button">Keluar</button>
+        </div>
+
+        <div id="admin-view" class="hidden">
+            <h1>👑 Panel Admin</h1>
+            <form id="create-user-form">
+                <h2>Buat User & Lisensi Baru</h2>
+                <input type="text" id="new-username" placeholder="Username Pelanggan" required>
+                <input type="number" id="expiry-days" placeholder="Masa Aktif (hari)" required min="1">
+                <button type="submit">Buat Lisensi</button>
+            </form>
+             <button id="logout-admin" class="logout-button">Keluar</button>
+        </div>
+        
+        <div id="result-container" class="hidden">
+            <h2>📜 Data Bot yang Dibuat</h2>
+            <table id="result-table">
+                <thead>
+                    <tr>
+                        <th>Username Bot</th>
+                        <th>CPU</th>
+                        <th>RAM</th>
+                        <th>Disk</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <audio src="background-music.mp3" autoplay loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
