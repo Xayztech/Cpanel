@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const logoutAdminBtn = document.getElementById('logout-admin');
 
     // Alamat server backend Anda
-    const backendUrl = 'http://localhost:3000';
+    const backendUrl = 'https://Xayztech.github.io/Cpanel';
 
     // Event listener untuk form login
     loginForm.addEventListener('submit', async (event) => {
